@@ -26,4 +26,6 @@ Click Erase IC
 
 Click Write IC  
   
-Once done, remove the chip clip and plug in your charger, if it doesnt boot, try to plug the battery back in, if it STILL doesnt boot.. RIP.
+Once done, remove the chip clip and plug in your charger, if it doesnt boot, try to plug the battery back in, if it STILL doesnt boot.. RIP.  
+
+If it DOES work, restart from the beginning in README.md
