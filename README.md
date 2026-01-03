@@ -12,9 +12,9 @@ Check these things to see if you can do this:
 7. Common sense
 8. A brain
 9. Being smart
-10. I just wanna see this reach to 10 :D
-With that out of the way, lets begin!
-Turn off the chromebook, Flip it to the back with the screws and stuff, and open the back to access the lovely PCB.
+10. I just wanna see this reach to 10 :D \n
+With that out of the way, lets begin!\n
+Turn off the chromebook, Flip it to the back with the screws and stuff, and open the back to access the lovely PCB.\n
 **DISCONNECT THE BATTERY**
 Look at your chip clip and find the red wire, then look at the chip on your computer then look for a circle, this circle points to where PIN 1 is.
 The red wire = pin 1, make it so the red wire is attached to pin one.
