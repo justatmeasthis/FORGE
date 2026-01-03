@@ -47,8 +47,8 @@ Back to the NeoProgrammer press the open file button, then press on file.bin (NO
 Press erase IC  
 (It should take a long time, thats ok)  
 Press write IC  
-You did it! you wrote GBB flags while still being enrolled! Now remove the CH341A programmer and plug in a charger
-> [!CAUTION]
+You did it! you wrote GBB flags while still being enrolled! Now remove the CH341A programmer and plug in a charger.
+> [!IMPORTANT]
 > If your device isnt Booting despite a charger bein plugged in after a minute, your bios might be corrupted, goto CorruptBios.md for more info.
 
 Using the external disk option (CTRL+U) goto sh1mmer and in the bash shell do ``vpd -l`` and take a screenshot of the output, this is for once you decide to re enroll.  
@@ -57,6 +57,6 @@ Make sure to type EVERYTHING exactly as they are shown.
 ``vpd -i RO_VPD -s serial_number="RANDSERIALHERE1234"``  
 ``vpd -i RW_VPD -s block_devmode="0"``  
 ``vpd -i RW_VPD -s check_enrollment="0"``  
-``crossystem block_devmode=0``
-``reboot -f``
+``crossystem block_devmode=0``  
+``reboot -f``  
 To Re-enroll, check the ReEnroll.md  
