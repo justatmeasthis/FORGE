@@ -20,7 +20,8 @@ Check these things to see if you can do this:
 3. Secondary laptop with Linux & NeoProgrammer installed.
 4. Screwdriver.
 5. Knowledge on how to open up your chromebook and where the flash chip is.
-6. If your GSC is Ti50, please wait for me to upload a tutorial.
+6. 45+ Watt charger
+7. If your GSC is Ti50, please wait for me to upload a tutorial.
   
 ## TUTORIAL
  Press ESC+⟳+⏻.  
@@ -68,12 +69,12 @@ Once you get out that loop, DO the bulletin instructions **TWICE**
   
 Press write IC  
   
-You did it! you wrote GBB flags while still being enrolled! You may now remove the chip clip and plug in your charger
+You did it! you wrote GBB flags while still being enrolled! You may now remove the chip clip and THEN plug in your charger
   
 > [!IMPORTANT]
 > If your device isnt Booting despite a charger bein plugged in after a minute, your bios might be corrupted, goto CorruptBiosCR50.md for more info.
   
-Using the external disk option (CTRL+U) goto sh1mmer and in the bash shell do ``vpd -l`` and take a screenshot of the output, this is for once you decide to re enroll.  
+! Using the external disk option (CTRL+U) goto sh1mmer and in the bash shell do ``vpd -l`` and take a screenshot of the output, this is for once you decide to re enroll.  
   
 Make sure to type EVERYTHING exactly as they are shown.  
   
