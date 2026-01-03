@@ -1,8 +1,8 @@
-# **FORGE**
-**F**irmware **O**verwrite (and) **R**euse (for) **G**oogle **E**quipment
-WARNING!!!! THIS HAS A CHANCE OF BRICKING IF YOUR DUMB, DO NOT DO THIS UNLESS ITS YOUR OWN DEVICE (NOT THE SCHOOLS)
-In summary this erases your bios, then adds a new one set with the gbb flags you choose, letting you boot in SH1MMER via external disk, and changes the device secret as well as the S/N.
-Check these things to see if you can do this:
+# **FORGE**  
+**F**irmware **O**verwrite (and) **R**euse (for) **G**oogle **E**quipment  
+WARNING!!!! THIS HAS A CHANCE OF BRICKING IF YOUR DUMB, DO NOT DO THIS UNLESS ITS YOUR OWN DEVICE (NOT THE SCHOOLS)  
+In summary this erases your bios, then adds a new one set with the gbb flags you choose, letting you boot in SH1MMER via external disk, and changes the device secret as well as the S/N.  
+Check these things to see if you can do this:  
 1. CH341A programmer kit
 2. USB
 3. Knowledge on how to open **your** chromebook, and location of **your** flash chip
