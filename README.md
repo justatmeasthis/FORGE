@@ -23,20 +23,20 @@ Check these things to see if you can do this:
 6. If your GSC is Ti50, please wait for me to upload a tutorial.
   
 ## TUTORIAL
-> Press ESC+⟳+⏻.  
+ Press ESC+⟳+⏻.  
   
-> Pres CTRL+D and and continue.  
+ Pres CTRL+D and and continue.  
   
-> Turn off computer after it shows return to secure mode screen. (TONORM)  
+ Turn off computer after it shows return to secure mode screen. (TONORM)  
   
-> Open up the chasis of the chromebook.  
+ Open up the chasis of the chromebook.  
   
 **DISCONNECT THE BATTERY**  
  > [!TIP]  
 > Look at your chip clip and find the red wire, then look at the chip on your computer and look for a circle, this circle points to where PIN 1 is.  
 > The red wire = pin 1, make it so the red wire is attached to pin one.  
   
-> Plug in the ch341a programmer into the Secondary computer and open up NeoProgrammer  
+ Plug in the ch341a programmer into the Secondary computer and open up NeoProgrammer  
   
 @ Click the detect button to see the flash chip, then follow this loop:  
   
@@ -51,29 +51,29 @@ Once you get out that loop, DO the bulletin instructions **TWICE**
 - Click Unprotect  
 - Click save (if this is your second loop, rename the second save as BACKUP)
   
-> On your linux terminal, then type ``diff /path/to/file.bin /path/to/BACKUPfile.bin``  
+ On your linux terminal, then type ``diff /path/to/file.bin /path/to/BACKUPfile.bin``  
   
-> If theres no output, good! If there is an output, delete the 2 files and go back to the step w/ the @ symbol.  
+ If theres no output, good! If there is an output, delete the 2 files and go back to the step w/ the @ symbol.  
   
 **DO NOT TOUCH THE CHIP CLIP FROM NOW ON**  
   
-> Download the gbb_utility attached to this git (creds to mrchromebox, ty :D)  
+ Download the gbb_utility attached to this git (creds to mrchromebox, ty :D)  
   
-> Do ``./path/to/gbb_utility /path/to/file.bin --set --flags=0x8091`` on your linux terminal (you can replace 0x8091 with whatever you want, but it MUST have DISABLE_FWMP)  
+ Do ``./path/to/gbb_utility /path/to/file.bin --set --flags=0x8091`` on your linux terminal (you can replace 0x8091 with whatever you want, but it MUST have DISABLE_FWMP)  
   
-> On the NeoProgrammer, press the open file button, then press on file.bin (NOT backupfile.bin)  
+ On the NeoProgrammer, press the open file button, then press on file.bin (NOT backupfile.bin)  
   
-> Press erase IC
+ Press erase IC
 (It should take a long time, thats ok)  
   
-> Press write IC  
+Press write IC  
   
 You did it! you wrote GBB flags while still being enrolled! You may now remove the chip clip and plug in your charger
   
 > [!IMPORTANT]
 > If your device isnt Booting despite a charger bein plugged in after a minute, your bios might be corrupted, goto CorruptBiosCR50.md for more info.
   
-> Using the external disk option (CTRL+U) goto sh1mmer and in the bash shell do ``vpd -l`` and take a screenshot of the output, this is for once you decide to re enroll.  
+Using the external disk option (CTRL+U) goto sh1mmer and in the bash shell do ``vpd -l`` and take a screenshot of the output, this is for once you decide to re enroll.  
   
 Make sure to type EVERYTHING exactly as they are shown.  
   
