@@ -1,20 +1,29 @@
 # **FORGE**  
 **F**irmware **O**verwrite (and) **R**euse (for) **G**oogle **E**quipment  
-WARNING!!!! THIS HAS A CHANCE OF BRICKING IF YOUR DUMB, DO NOT DO THIS UNLESS ITS YOUR OWN DEVICE (NOT THE SCHOOLS)  
-In summary this erases your bios, then adds a new one set with the gbb flags you choose, letting you boot in SH1MMER via external disk, and changes the device secret as well as the S/N.  
+> [!CAUTION]
+> WARNING!!!! THIS HAS A CHANCE OF BRICKING IF YOUR DUMB, DO NOT DO THIS UNLESS ITS YOUR OWN DEVICE (NOT THE SCHOOLS)  
+
+> [!IMPORTANT]
+> This has NOT been tested on Ti50, do not assume it will work if you have a Ti50 device.  
+
+## TL;DR
+In summary this erases your bios, then adds a new one set with the gbb flags you choose, letting you boot in SH1MMER via CTRL+U.  
+## PRE Requisites
+Please **dont** use this exploit if the ANY of the following applies to you:  
+- KV6≤
+- Not keyrolled
+- Skid
+
+## Requirements
 Check these things to see if you can do this:  
 1. CH341A programmer kit
-2. USB
-3. Knowledge on how to open **your** chromebook, and location of **your** flash chip
-4. A charger
-5. Secondary computer with linux and NeoProgrammer installed
-6. Not being a skid
-7. Common sense
-8. A brain
-9. Being smart
-10. I just wanna see this reach to 10 :D  
-With that out of the way, lets begin!  
-Turn off the chromebook, Flip it to the back with the screws and stuff, and open the back to access the lovely PCB.  
+2. USB w/ SH1MMER
+3. Secondary laptop with Linux & NeoProgrammer installed
+4. Screwdriver
+5. Knowledge on how to open up your chromebook and where the flash chip is
+6. If your GSC is Ti50, please do Ti50.md
+
+## TUTORIAL
 **DISCONNECT THE BATTERY**  
 Look at your chip clip and find the red wire, then look at the chip on your computer then look for a circle, this circle points to where PIN 1 is.  
 The red wire = pin 1, make it so the red wire is attached to pin one.  
@@ -38,12 +47,16 @@ Back to the NeoProgrammer press the open file button, then press on file.bin (NO
 Press erase IC  
 (It should take a long time, thats ok)  
 Press write IC  
-You did it! you wrote GBB flags while still being enrolled! Now check if you have a USB. If you dont, thats fine!  
-If you have a usb, goto sh1mmer and in the bash shell do ``vpd -l`` and take a screenshot of the output, this is for once you decide to re enroll.  
+You did it! you wrote GBB flags while still being enrolled! Now remove the CH341A programmer and plug in a charger
+> [!CAUTION]
+> If your device isnt Booting despite a charger bein plugged in after a minute, your bios might be corrupted, goto CorruptBios.md for more info.
+
+Using the external disk option (CTRL+U) goto sh1mmer and in the bash shell do ``vpd -l`` and take a screenshot of the output, this is for once you decide to re enroll.  
 Make sure to type EVERYTHING exactly as they are shown.  
-Type ``vpd -i RO_VPD -s stable_device_secret_DO_NOT_SHARE="$(openssl rand -hex 32)"``  
-Type ``vpd -i RO_VPD -s serial_number="TYPERANDOMSERIALHERE1234"``  
-Type ``vpd -i RW_VPD -s block_devmode="0"``  
-Type ``vpd -i RW_VPD -s check_enrollment="0"``  
-Type ``crossystem block_devmode=0``  
-You are now unenrolled, yippee!!  
+``vpd -i RO_VPD -s stable_device_secret_DO_NOT_SHARE="$(openssl rand -hex 32)"``  
+``vpd -i RO_VPD -s serial_number="RANDSERIALHERE1234"``  
+``vpd -i RW_VPD -s block_devmode="0"``  
+``vpd -i RW_VPD -s check_enrollment="0"``  
+``crossystem block_devmode=0``
+``reboot -f``
+To Re-enroll, check the ReEnroll.md  
