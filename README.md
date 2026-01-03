@@ -4,10 +4,10 @@
 > WARNING!!!! THIS HAS A CHANCE OF BRICKING IF YOUR DUMB, DO NOT DO THIS UNLESS ITS YOUR OWN DEVICE (NOT THE SCHOOLS) THIS IS FOR EDUCATIONAL PURPOSES ONLY
 
 > [!IMPORTANT]
-> This has NOT been tested on Ti50, do not assume it will work if you have a Ti50 device.  
+> Ti50 tutorial coming soon :D
 
 ## TL;DR
-In summary this erases your bios, then adds a new one set with the gbb flags you choose, letting you boot in SH1MMER via CTRL+U and do ACE  
+In summary this erases your bios, then adds a new one set with the gbb flags you choose, letting you boot in SH1MMER via CTRL+U and do ACE.  
 ## PRE Requisites
 Please **dont** use this exploit if the ANY of the following applies to you:  
 - KV6≤
@@ -15,23 +15,27 @@ Please **dont** use this exploit if the ANY of the following applies to you:
 - Skid
 ## Requirements
 Check these things to see if you can do this:  
-1. CH341A programmer kit
-2. USB w/ SH1MMER
-3. Secondary laptop with Linux & NeoProgrammer installed
-4. Screwdriver
-5. Knowledge on how to open up your chromebook and where the flash chip is
-6. If your GSC is Ti50, please do Ti50.md
-
+1. CH341A programmer kit.
+2. USB w/ SH1MMER.
+3. Secondary laptop with Linux & NeoProgrammer installed.
+4. Screwdriver.
+5. Knowledge on how to open up your chromebook and where the flash chip is.
+6. If your GSC is Ti50, please wait for me to upload a tutorial.
+  
 ## TUTORIAL
+Press ESC+⟳+⏻.  
+Pres CTRL+D and and continue.  
+Turn off computer after it shows return to secure mode screen. (TONORM)  
+Open up the chasis of the chromebook.  
 **DISCONNECT THE BATTERY**  
-Look at your chip clip and find the red wire, then look at the chip on your computer then look for a circle, this circle points to where PIN 1 is.  
+Look at your chip clip and find the red wire, then look at the chip on your computer and look for a circle, this circle points to where PIN 1 is.  
 The red wire = pin 1, make it so the red wire is attached to pin one.  
-then plug in the ch341a programmer into the computer with linux and NeoProgrammer installed  
-**note for me, change the instructions below as the order may not be accurate**  
-open up NeoProgrammer  
-@ click the detect button to see the flash chip, then follow this loop  
-- Connecting error CH341 (Not found): make sure its firmly plugged in dumbo  
-- IC not responding: move the chip clip a little bit to make sure its firmly attached  
+Then plug in the ch341a programmer into the computer with linux and NeoProgrammer installed  
+Open up NeoProgrammer.  
+@ Click the detect button to see the flash chip, then follow this loop.  
+  
+- Connecting error CH341 (Not found): make sure its firmly plugged in dumbo.  
+- IC not responding: move the chip clip a little bit to make sure its firmly attached.  
 - Multiple Chips showing: unplug your chip clip and look at your flash chip to see the writing on it, take a screenshot of that writing and then search for that writing on the search bar once youve put the chip clip back.
   
 Once you get out that loop, DO the bulletin instructions **TWICE**  
