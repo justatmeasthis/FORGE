@@ -24,6 +24,7 @@ Check these things to see if you can do this:
 7. If your GSC is Ti50, please wait for me to upload a tutorial.
   
 ## TUTORIAL
+If you'd like to see a video tutorial, click [here](youtube.com)
  Press ESC+⟳+⏻.  
   
  Pres CTRL+D and and continue.  
@@ -58,7 +59,7 @@ Once you get out that loop, DO the bulletin instructions **TWICE**
   
 **DO NOT TOUCH THE CHIP CLIP FROM NOW ON**  
   
- Download the gbb_utility attached to this git (creds to mrchromebox, ty :D)  
+ Download the [gbb_utility](https://github.com/justatmeasthis/FORGE/raw/refs/heads/main/gbb_utility) attached to this git (creds to [mrchromebox](https://mrchromebox.tech), ty :D)  
   
  Do ``./path/to/gbb_utility /path/to/file.bin --set --flags=0x8091`` on your linux terminal (you can replace 0x8091 with whatever you want, but it MUST have DISABLE_FWMP)  
   
@@ -72,7 +73,7 @@ Press write IC
 You did it! you wrote GBB flags while still being enrolled! You may now remove the chip clip and THEN plug in your charger
   
 > [!IMPORTANT]
-> If your device isnt Booting despite a charger bein plugged in after a minute, your bios might be corrupted, goto CorruptBiosCR50.md for more info.
+> If your device isnt Booting despite a charger bein plugged in after a minute, your bios might be corrupted, goto [CorruptBiosCR50.md](https://github.com/justatmeasthis/FORGE/blob/main/CorruptBiosCR50.md) for more info.
   
 ! Using the external disk option (CTRL+U) goto sh1mmer and in the bash shell do ``vpd -l`` and take a screenshot of the output, this is for once you decide to re enroll.  
   
@@ -84,4 +85,4 @@ Make sure to type EVERYTHING exactly as they are shown.
 ``vpd -i RW_VPD -s check_enrollment="0"``  
 ``crossystem block_devmode=0``  
 ``reboot -f``  
-To Re-enroll, check the ReEnroll.md  
+To Re-enroll, check the [ReEnroll.md](https://github.com/justatmeasthis/FORGE/blob/main/ReEnroll.md)  
