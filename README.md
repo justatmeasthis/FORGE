@@ -1,19 +1,18 @@
 # **FORGE**  
 **F**irmware **O**verwrite (and) **R**euse (for) **G**oogle **E**quipment  
 > [!CAUTION]
-> WARNING!!!! THIS HAS A CHANCE OF BRICKING IF YOUR DUMB, DO NOT DO THIS UNLESS ITS YOUR OWN DEVICE (NOT THE SCHOOLS)  
+> WARNING!!!! THIS HAS A CHANCE OF BRICKING IF YOUR DUMB, DO NOT DO THIS UNLESS ITS YOUR OWN DEVICE (NOT THE SCHOOLS) THIS IS FOR EDUCATIONAL PURPOSES ONLY
 
 > [!IMPORTANT]
 > This has NOT been tested on Ti50, do not assume it will work if you have a Ti50 device.  
 
 ## TL;DR
-In summary this erases your bios, then adds a new one set with the gbb flags you choose, letting you boot in SH1MMER via CTRL+U.  
+In summary this erases your bios, then adds a new one set with the gbb flags you choose, letting you boot in SH1MMER via CTRL+U and do ACE  
 ## PRE Requisites
 Please **dont** use this exploit if the ANY of the following applies to you:  
 - KV6≤
 - Not keyrolled
 - Skid
-
 ## Requirements
 Check these things to see if you can do this:  
 1. CH341A programmer kit
@@ -38,7 +37,8 @@ Once you get out that loop, DO the bulletin instructions **TWICE**
 - Click read IC  
 - (It should take a long time, thats ok)  
 - Click Unprotect  
-- Click save (if this is your second loop, rename the second save as BACKUP)  
+- Click save (if this is your second loop, rename the second save as BACKUP)
+  
 Goto your linux terminal, then type ``diff /path/to/file.bin /path/to/BACKUPfile.bin``  
 If theres no output, good! if there is an output, delete the 2 files and go back to the step w/ the @ symbol.  
 **KEEP THE CHIP CLIP ON FROM NOW ON**  
@@ -50,8 +50,8 @@ Press erase IC
 Press write IC  
 You did it! you wrote GBB flags while still being enrolled! Now remove the CH341A programmer and plug in a charger.
 > [!IMPORTANT]
-> If your device isnt Booting despite a charger bein plugged in after a minute, your bios might be corrupted, goto CorruptBios.md for more info.
-
+> If your device isnt Booting despite a charger bein plugged in after a minute, your bios might be corrupted, goto CorruptBiosCR50.md for more info.
+  
 Using the external disk option (CTRL+U) goto sh1mmer and in the bash shell do ``vpd -l`` and take a screenshot of the output, this is for once you decide to re enroll.  
 Make sure to type EVERYTHING exactly as they are shown.  
 ``vpd -i RO_VPD -s stable_device_secret_DO_NOT_SHARE="$(openssl rand -hex 32)"``  
