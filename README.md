@@ -24,14 +24,23 @@ Check these things to see if you can do this:
   
 ## TUTORIAL
 Press ESC+⟳+⏻.  
+  
 Pres CTRL+D and and continue.  
+  
 Turn off computer after it shows return to secure mode screen. (TONORM)  
+  
 Open up the chasis of the chromebook.  
+  
 **DISCONNECT THE BATTERY**  
+  
 Look at your chip clip and find the red wire, then look at the chip on your computer and look for a circle, this circle points to where PIN 1 is.  
+  
 The red wire = pin 1, make it so the red wire is attached to pin one.  
+  
 Then plug in the ch341a programmer into the computer with linux and NeoProgrammer installed  
+  
 Open up NeoProgrammer.  
+  
 @ Click the detect button to see the flash chip, then follow this loop.  
   
 - Connecting error CH341 (Not found): make sure its firmly plugged in dumbo.  
@@ -46,20 +55,31 @@ Once you get out that loop, DO the bulletin instructions **TWICE**
 - Click save (if this is your second loop, rename the second save as BACKUP)
   
 Goto your linux terminal, then type ``diff /path/to/file.bin /path/to/BACKUPfile.bin``  
+  
 If theres no output, good! if there is an output, delete the 2 files and go back to the step w/ the @ symbol.  
-**KEEP THE CHIP CLIP ON FROM NOW ON**  
+  
+**DO NOT TOUCH THE CHIP CLIP FROM NOW ON**  
+  
 Download the gbb_utility attached to this git (creds to mrchromebox, ty :D)  
+  
 Do ``./path/to/gbb_utility /path/to/file.bin --set --flags=0x8091`` on your linux terminal (you can replace 0x8091 with whatever you want, but it MUST have DISABLE_FWMP)  
+  
 Back to the NeoProgrammer press the open file button, then press on file.bin (NOT backupfile.bin)  
+  
 Press erase IC  
 (It should take a long time, thats ok)  
+  
 Press write IC  
+  
 You did it! you wrote GBB flags while still being enrolled! Now remove the CH341A programmer and plug in a charger.
+  
 > [!IMPORTANT]
 > If your device isnt Booting despite a charger bein plugged in after a minute, your bios might be corrupted, goto CorruptBiosCR50.md for more info.
   
 Using the external disk option (CTRL+U) goto sh1mmer and in the bash shell do ``vpd -l`` and take a screenshot of the output, this is for once you decide to re enroll.  
+  
 Make sure to type EVERYTHING exactly as they are shown.  
+  
 ``vpd -i RO_VPD -s stable_device_secret_DO_NOT_SHARE="$(openssl rand -hex 32)"``  
 ``vpd -i RO_VPD -s serial_number="RANDSERIALHERE1234"``  
 ``vpd -i RW_VPD -s block_devmode="0"``  
