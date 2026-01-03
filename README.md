@@ -24,7 +24,7 @@ open up NeoProgrammer, click the detect button to see the flash chip, then follo
 - Connecting error CH341 (Not found): make sure its firmly plugged in dumbo  
 - IC not responding? move the chip clip a little bit to make sure its firmly attached  
 - Multiple Chips showing? unplug your chip clip and look at your flash chip to see the writing on it, take a screenshot of that writing and then search for that writing on the search bar once youve put the chip clip back.  
-Once you get out that loop, DO THIS **TWICE**  
+Once you get out that loop, DO the bulletin instructions **TWICE**  
 - Click read IC  
 - (It should take a long time, thats ok)  
 - Click Unprotect  
