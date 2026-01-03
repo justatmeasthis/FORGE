@@ -25,7 +25,7 @@ Check these things to see if you can do this:
 ## TUTORIAL
 Press ESC+⟳+⏻.  
   
-Pres CTRL+D and and continue.  
+> Pres CTRL+D and and continue.  
   
 Turn off computer after it shows return to secure mode screen. (TONORM)  
   
