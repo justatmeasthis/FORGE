@@ -29,7 +29,7 @@ Look at your chip clip and find the red wire, then look at the chip on your comp
 The red wire = pin 1, make it so the red wire is attached to pin one.  
 then plug in the ch341a programmer into the computer with linux and NeoProgrammer installed  
 **note for me, change the instructions below as the order may not be accurate**  
-open up NeoProgrammer, click the detect button to see the flash chip, then follow this loop  
++ open up NeoProgrammer, click the detect button to see the flash chip, then follow this loop  
 - Connecting error CH341 (Not found): make sure its firmly plugged in dumbo  
 - IC not responding? move the chip clip a little bit to make sure its firmly attached  
 - Multiple Chips showing? unplug your chip clip and look at your flash chip to see the writing on it, take a screenshot of that writing and then search for that writing on the search bar once youve put the chip clip back.  
