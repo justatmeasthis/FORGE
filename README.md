@@ -35,7 +35,7 @@ Turn off computer after it shows return to secure mode screen. (TONORM)
   
 <img src="https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/confirm_black.png" alt="TONORM"/>
   
- Open up the chasis of the chromebook.  
+ Open up the chasis of the chromebook. (screwdriver required) 
   
 **DISCONNECT THE BATTERY**  
 > [!TIP]  
