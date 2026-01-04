@@ -1,5 +1,5 @@
 # **FORGE**  
-**F**irmware **O**verwrite (and) **R**euse (for) **G**oogle **E**quipment  
+**F**irmware **O**verwrite (and) **R**eflash (for) **G**oogle **E**quipment  
 > [!CAUTION]
 > WARNING!!!! THIS HAS A CHANCE OF BRICKING IF YOUR DUMB, DO NOT DO THIS UNLESS ITS YOUR OWN DEVICE (NOT THE SCHOOLS) THIS IS FOR EDUCATIONAL PURPOSES ONLY
 
