@@ -25,22 +25,24 @@ Check these things to see if you can do this:
   
 ## TUTORIAL
  Press ESC+⟳+⏻.  
-  Should show something like this:
+Should show something like this (creds to MercuryWorkshop for these images):
 <img src="https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/recover_black.png" alt="Recovery screen"/>
   
  Press CTRL+D and and continue.  
-https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/confirm_black.png https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/confirm_white.png
   
- Turn off computer after it shows return to secure mode screen. (TONORM)  
-  
+Turn off computer after it shows return to secure mode screen. (TONORM)  
+<img src="https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/confirm_black.png" alt="TONORM"/>
+    
  Open up the chasis of the chromebook.  
   
 **DISCONNECT THE BATTERY**  
- > [!TIP]  
+> [!TIP]  
 > Look at your chip clip and find the red wire, then look at the chip on your computer and look for a circle, this circle points to where PIN 1 is.  
 > The red wire = pin 1, make it so the red wire is attached to pin one.  
   
- Plug in the ch341a programmer into the Secondary computer and open up NeoProgrammer  
+Plug in the ch341a programmer into the Secondary computer and open up NeoProgrammer  
+The image below will help you find where each button is.
+<img src="https://github.com/justatmeasthis/FORGE/blob/main/NeoCheatsheet.png" alt=NeoCheetsheet/>  
   
 @ Click the detect button to see the flash chip, then follow this loop:  
   
