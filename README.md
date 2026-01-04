@@ -25,14 +25,16 @@ Check these things to see if you can do this:
   
 ## TUTORIAL
  Press ESC+⟳+⏻.  
-Should show something like this (creds to MercuryWorkshop for these images):
+Should show something like this (creds to MercuryWorkshop for these images):  
+  
 <img src="https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/recover_black.png" alt="Recovery screen"/>
   
  Press CTRL+D and and continue.  
   
 Turn off computer after it shows return to secure mode screen. (TONORM)  
+  
 <img src="https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/confirm_black.png" alt="TONORM"/>
-    
+  
  Open up the chasis of the chromebook.  
   
 **DISCONNECT THE BATTERY**  
@@ -41,21 +43,22 @@ Turn off computer after it shows return to secure mode screen. (TONORM)
 > The red wire = pin 1, make it so the red wire is attached to pin one.  
   
 Plug in the ch341a programmer into the Secondary computer and open up NeoProgrammer  
-The image below will help you find where each button is.
+The image below will help you find where each button is.  
+  
 <img src="https://github.com/justatmeasthis/FORGE/blob/main/NeoCheatsheet.png" alt=NeoCheetsheet/>  
   
 @ Click the detect button to see the flash chip, then follow this loop:  
   
-- Connecting error CH341 (Not found): make sure its firmly plugged in dumbo.  
-- IC not responding: move the chip clip a little bit to make sure its firmly attached.  
-- Multiple Chips showing: unplug your chip clip and look at your flash chip to see the writing on it, take a screenshot of that writing and then search for that writing on the search bar once youve put the chip clip back.
+- Connecting Error CH341 (Not found): make sure its firmly plugged in dumbo.  
+- IC Not Responding: move the chip clip a little bit to make sure its firmly attached.  
+- Multiple Chips Showing: unplug your chip clip and look at your flash chip to see the writing on it, take a screenshot of that writing and then search for that writing on the search bar once youve put the chip clip back.
   
 Once you get out that loop, DO the bulletin instructions **TWICE**  
   
-- Click read IC  
+- Click Read IC  
 - (It should take a long time, thats ok)  
-- Click Unprotect  
-- Click save (if this is your second loop, rename the second save as BACKUP)
+- Click Unlock  
+- Click Save File (if this is your second loop, rename the second save as BACKUP)
   
  On your linux terminal, then type ``diff /path/to/file.bin /path/to/BACKUPfile.bin``  
   
@@ -69,10 +72,10 @@ Once you get out that loop, DO the bulletin instructions **TWICE**
   
  On the NeoProgrammer, press the open file button, then press on file.bin (NOT backupfile.bin)  
   
- Press erase IC
+ Press Erase IC
 (It should take a long time, thats ok)  
   
-Press write IC  
+Press Write IC  
   
 You did it! you wrote GBB flags while still being enrolled! You may now remove the chip clip and THEN plug in your charger
   
