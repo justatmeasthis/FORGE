@@ -24,7 +24,6 @@ Check these things to see if you can do this:
 7. If your GSC is Ti50, please wait for me to upload a tutorial.
   
 ## TUTORIAL
-If you'd like to see a video tutorial, click [here](youtube.com)
  Press ESC+⟳+⏻.  
   
  Pres CTRL+D and and continue.  
