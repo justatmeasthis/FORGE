@@ -26,7 +26,7 @@ Check these things to see if you can do this:
 ## TUTORIAL
  Press ESC+⟳+⏻.  
   Should show something like this:
-https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/recover_black.png https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/recover_white.png
+<img src="https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/recover_black.png" alt="Recovery screen"/>
   
  Press CTRL+D and and continue.  
 https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/confirm_black.png https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/confirm_white.png
