@@ -1,7 +1,7 @@
 # **FORGE**  
 **F**irmware **O**verwrite (and) **R**eflash (for) **G**oogle **E**quipment
 
-https://github.com/justatmeasthis/FORGE/blob/main/ForgeLogo.png
+<img src="https://github.com/justatmeasthis/FORGE/blob/main/ForgeLogo.png" alt="Forge Logo"/>
 
 > [!CAUTION]
 > WARNING!!!! THIS HAS A CHANCE OF BRICKING IF YOUR DUMB, DO NOT DO THIS UNLESS ITS YOUR OWN DEVICE (NOT THE SCHOOLS) THIS IS FOR EDUCATIONAL PURPOSES ONLY
