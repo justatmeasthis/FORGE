@@ -15,7 +15,7 @@ Type in the following:
 ``crossystem block_devmode=1``  
 ``crossystem dev_boot_usb=0``  
 ``crossystem disable_dev_request=1``  
-``vpd -i RO_VPD -s serial_number="OriginalS/N" -s stable_device_secret_DO_NOT_SHARE="$(openssl rand -hex 32)"``  
+``vpd -i RO_VPD -s serial_number="OriginalS/N" -s stable_device_secret_DO_NOT_SHARE="Originaldevicesecret"``  
 ``reboot -f``  
   
 Press return to secure mode (To not get flagged by GAC)  
