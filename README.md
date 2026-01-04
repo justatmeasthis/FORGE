@@ -90,7 +90,7 @@ You did it! you wrote GBB flags while still being enrolled! You may now remove t
 Make sure to type EVERYTHING exactly as they are shown.  
   
 ``vpd -i RO_VPD -s stable_device_secret_DO_NOT_SHARE="$(openssl rand -hex 32)"``  
-``vpd -i RO_VPD -s serial_number="RANDSERIALHERE1234"``  
+``vpd -i RO_VPD -s serial_number="$(openssl rand -hex 5)"``  
 ``vpd -i RW_VPD -s block_devmode="0"``  
 ``vpd -i RW_VPD -s check_enrollment="0"``  
 ``crossystem block_devmode=0``  
