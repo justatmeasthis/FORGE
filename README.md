@@ -13,7 +13,7 @@
 In summary this erases your bios, then adds a new one set with the gbb flags you choose, letting you boot in SH1MMER via CTRL+U and do ACE.  
 ## PRE Requisites
 Please **dont** use this exploit if the ANY of the following applies to you, this is because there are **far better** exploits:  
-- KV6≤
+- KV6≥
 - Not keyrolled
 - Skid
 - Ti50 device
