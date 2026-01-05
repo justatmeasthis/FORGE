@@ -34,7 +34,7 @@ Should show something like this (creds to MercuryWorkshop for these images):
   
 <img src="https://github.com/MercuryWorkshop/sh1mmer/blob/beautifulworld/assets/recover_black.png" alt="Recovery screen"/>
   
- Press CTRL+D and and continue.  
+ Press CTRL+D and continue.  
   
 Turn off computer after it shows return to secure mode screen. (TONORM)  
   
@@ -45,8 +45,7 @@ Turn off computer after it shows return to secure mode screen. (TONORM)
 **DISCONNECT THE BATTERY.**  
   
 > [!TIP]  
-> Look at your chip clip and find the red wire, then look at the chip on your computer and look for a circle, this circle points to where PIN 1 is.  
-> The red wire = pin 1, make it so the red wire is attached to pin one.  
+> Look at your chip clip and find the red wire, then look at the chip on your computer and look for a circle, this circle points to where PIN 1 is. The red wire = pin 1, make it so the red wire is attached to pin one.  
   
 Plug in the ch341a programmer into the Secondary computer and open up NeoProgrammer.  
 The image below will help you find where each button is.  
@@ -66,7 +65,7 @@ If you dont have any of these errors, do the following bulletin instructions **T
 - Click Unlock.  
 - Click Save File. (if this is your second loop, rename the second save as BACKUP)  
   
-On your linux terminal, then type ``diff /path/to/file.bin /path/to/BACKUPfile.bin``  
+On your linux terminal, type ``diff /path/to/file.bin /path/to/BACKUPfile.bin``  
   
 If theres no output, good! If there is an output, delete the 2 files and go back to the line w/ the @ symbol.  
     
@@ -85,9 +84,9 @@ Press Write IC.
 You did it! You wrote GBB flags while still being enrolled! You may now remove the chip clip and THEN plug in your charger.
   
 > [!IMPORTANT]
-> If your device isnt Booting despite a charger bein plugged in after a minute, your bios might be corrupted, goto [CorruptBiosCR50.md](https://github.com/justatmeasthis/FORGE/blob/main/CorruptBiosCR50.md) for more info.
+> If your device isnt Booting despite a charger being plugged in after a minute, your bios might be corrupted, goto [CorruptBiosCR50.md](https://github.com/justatmeasthis/FORGE/blob/main/CorruptBiosCR50.md) for more info.
   
-! Using the external disk option (CTRL+U) goto sh1mmer and in the bash shell do ``vpd -l`` and take a *good* screenshot of the output, this is for once you decide to ReEnroll.  
+! Using the external disk option (CTRL+U) goto SH1MMER and in the bash shell do ``vpd -l`` and take a *good* screenshot of the output, this is for once you decide to ReEnroll.  
   
 Make sure to type EVERYTHING exactly as they are shown.  
   
@@ -97,4 +96,7 @@ Make sure to type EVERYTHING exactly as they are shown.
 ``vpd -i RW_VPD -s check_enrollment="0"``  
 ``crossystem block_devmode=0``  
 ``reboot -f``  
+
+You are now **Unenrolled** assemble everything back together and your good!
+  
 To Re-enroll, check the [ReEnroll.md](https://github.com/justatmeasthis/FORGE/blob/main/ReEnroll.md)  
