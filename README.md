@@ -97,6 +97,6 @@ Make sure to type EVERYTHING exactly as they are shown.
 ``crossystem block_devmode=0``  
 ``reboot -f``  
 
-You are now **Unenrolled** assemble everything back together and your good!
+You are now **Unenrolled**! assemble everything back together and your good!
   
 To Re-enroll, check the [ReEnroll.md](https://github.com/justatmeasthis/FORGE/blob/main/ReEnroll.md)  
