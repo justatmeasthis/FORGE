@@ -26,7 +26,8 @@ Check these things to see if you can do this:
 5. Knowledge on how to open up your chromebook and where the flash chip is.
 6. 45+ Watt charger.
 7. If your GSC is Ti50, please wait.
-  
+## VIDEO TUTORIAL
+Video Tutorial is listed [here(https://youtu.be/VCLU2V25lF4?si=BngPYSoYqFbc9eJK)
 ## TUTORIAL
  Press ESC+⟳+⏻.  
 Should show something like this (creds to MercuryWorkshop for these images):  
